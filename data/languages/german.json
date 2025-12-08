@@ -1,0 +1,44 @@
+{
+  "menu": {
+    "title": "re-Adventure",
+    "subtitle": "Eine Neuinterpretation des Klassikers \"Adventure\"",
+    "start_game": "Spiel starten",
+    "exit": "Beenden",
+    "controls": "Steuerung: WASD/Pfeile zum Bewegen • Leertaste/E zum Angreifen • ESC zum Beenden",
+    "objective": "Ziel: Finde den Verzauberten Kelch!"
+  },
+  "game": {
+    "room": "Raum",
+    "inventory": "Inventar",
+    "inventory_empty": "Leer",
+    "welcome": "Willkommen bei re-Adventure!",
+    "game_over": "SPIEL VORBEI",
+    "you_died": "Du bist gestorben!",
+    "victory": "SIEG!",
+    "found_chalice": "Du hast den Verzauberten Kelch gefunden!",
+    "try_again": "Erneut versuchen",
+    "play_again": "Erneut spielen",
+    "main_menu": "Hauptmenü"
+  },
+  "messages": {
+    "found_sword": "Schwert gefunden!",
+    "found_key": "{key_type} Schlüssel gefunden!",
+    "found_chalice": "Verzauberter Kelch gefunden!",
+    "found_item": "{item} gefunden!",
+    "defeated": "{enemy} besiegt!",
+    "hit": "{enemy} getroffen!",
+    "took_damage": "Aua! Schaden genommen!",
+    "hit_hazard": "Falle berührt!",
+    "game_over": "Spiel vorbei! Du bist gestorben.",
+    "victory": "Sieg! Du hast den Verzauberten Kelch gefunden!",
+    "entered_room": "Betreten: {room}",
+    "game_loaded": "Spiel geladen!"
+  },
+  "enemies": {
+    "dragon_red": "Roter Drache",
+    "dragon_yellow": "Gelber Drache",
+    "dragon_green": "Grüner Drache",
+    "bat": "Fledermaus"
+  }
+}
+

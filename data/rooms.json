@@ -1,0 +1,959 @@
+{
+  "starting_room": "castle_entrance",
+  "rooms": [
+    {
+      "id": "castle_entrance",
+      "name": "Castle Entrance",
+      "tileset": "castle",
+      "exits": {
+        "north": "great_hall",
+        "east": "armory",
+        "south": "courtyard",
+        "west": "guards_quarters"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 240
+        },
+        {
+          "type": "item",
+          "subtype": "sword",
+          "x": 200,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "guards_quarters",
+      "name": "Guards' Quarters",
+      "tileset": "castle",
+      "exits": {
+        "north": "barracks",
+        "east": "castle_entrance",
+        "south": null,
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 600,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "barracks",
+      "name": "Barracks",
+      "tileset": "castle",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": "guards_quarters",
+        "west": "tower_base"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        },
+        {
+          "type": "enemy",
+          "subtype": "bat",
+          "x": 320,
+          "y": 150
+        }
+      ]
+    },
+    {
+      "id": "tower_base",
+      "name": "Tower Base",
+      "tileset": "castle",
+      "exits": {
+        "north": "tower_stairs",
+        "east": "barracks",
+        "south": null,
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 600,
+          "y": 240
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_yellow",
+          "x": 200,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "tower_stairs",
+      "name": "Tower Stairs",
+      "tileset": "castle",
+      "exits": {
+        "north": "tower_top",
+        "east": null,
+        "south": "tower_base",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        }
+      ]
+    },
+    {
+      "id": "tower_top",
+      "name": "Tower Top",
+      "tileset": "castle",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": "tower_stairs",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        },
+        {
+          "type": "item",
+          "subtype": "key_silver",
+          "x": 320,
+          "y": 100
+        }
+      ]
+    },
+    {
+      "id": "great_hall",
+      "name": "Great Hall",
+      "tileset": "castle",
+      "exits": {
+        "north": "throne_room",
+        "east": "dining_hall",
+        "south": "castle_entrance",
+        "west": "library"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        },
+        {
+          "type": "item",
+          "subtype": "key_gold",
+          "x": 320,
+          "y": 100
+        }
+      ]
+    },
+    {
+      "id": "throne_room",
+      "name": "Throne Room",
+      "tileset": "castle",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": "great_hall",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_red",
+          "x": 320,
+          "y": 200
+        }
+      ]
+    },
+    {
+      "id": "dining_hall",
+      "name": "Dining Hall",
+      "tileset": "castle",
+      "exits": {
+        "north": null,
+        "east": "kitchen",
+        "south": null,
+        "west": "great_hall"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 100,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "tileset": "castle",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": null,
+        "west": "dining_hall"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 600,
+          "y": 240
+        },
+        {
+          "type": "enemy",
+          "subtype": "bat",
+          "x": 200,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "name": "Library",
+      "tileset": "castle",
+      "exits": {
+        "north": "study",
+        "east": "great_hall",
+        "south": null,
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 600,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "study",
+      "name": "Study",
+      "tileset": "castle",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": "library",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        }
+      ]
+    },
+    {
+      "id": "armory",
+      "name": "Armory",
+      "tileset": "castle",
+      "exits": {
+        "north": null,
+        "east": "training_grounds",
+        "south": null,
+        "west": "castle_entrance"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 100,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "training_grounds",
+      "name": "Training Grounds",
+      "tileset": "grasslands",
+      "exits": {
+        "north": "forest_edge",
+        "east": "outer_fields",
+        "south": null,
+        "west": "armory"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 100,
+          "y": 240
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_yellow",
+          "x": 400,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "outer_fields",
+      "name": "Outer Fields",
+      "tileset": "grasslands",
+      "exits": {
+        "north": null,
+        "east": "abandoned_farm",
+        "south": null,
+        "west": "training_grounds"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 100,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "abandoned_farm",
+      "name": "Abandoned Farm",
+      "tileset": "grasslands",
+      "exits": {
+        "north": "old_barn",
+        "east": null,
+        "south": null,
+        "west": "outer_fields"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 100,
+          "y": 240
+        },
+        {
+          "type": "enemy",
+          "subtype": "bat",
+          "x": 400,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "old_barn",
+      "name": "Old Barn",
+      "tileset": "grasslands",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": "abandoned_farm",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        }
+      ]
+    },
+    {
+      "id": "forest_edge",
+      "name": "Forest Edge",
+      "tileset": "forest",
+      "exits": {
+        "north": "deep_forest",
+        "east": null,
+        "south": "training_grounds",
+        "west": "forest_path"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        }
+      ]
+    },
+    {
+      "id": "forest_path",
+      "name": "Forest Path",
+      "tileset": "forest",
+      "exits": {
+        "north": "twisted_woods",
+        "east": "forest_edge",
+        "south": null,
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 600,
+          "y": 240
+        },
+        {
+          "type": "enemy",
+          "subtype": "bat",
+          "x": 200,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "twisted_woods",
+      "name": "Twisted Woods",
+      "tileset": "forest",
+      "exits": {
+        "north": "ancient_grove",
+        "east": null,
+        "south": "forest_path",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_green",
+          "x": 320,
+          "y": 150
+        }
+      ]
+    },
+    {
+      "id": "ancient_grove",
+      "name": "Ancient Grove",
+      "tileset": "forest",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": "twisted_woods",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        }
+      ]
+    },
+    {
+      "id": "deep_forest",
+      "name": "Deep Forest",
+      "tileset": "forest",
+      "exits": {
+        "north": "forest_clearing",
+        "east": null,
+        "south": "forest_edge",
+        "west": "dark_cave"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_green",
+          "x": 320,
+          "y": 150
+        }
+      ]
+    },
+    {
+      "id": "forest_clearing",
+      "name": "Forest Clearing",
+      "tileset": "forest",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": "deep_forest",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        }
+      ]
+    },
+    {
+      "id": "dark_cave",
+      "name": "Dark Cave",
+      "tileset": "dungeon",
+      "exits": {
+        "north": "cave_depths",
+        "east": "deep_forest",
+        "south": null,
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 600,
+          "y": 240
+        },
+        {
+          "type": "enemy",
+          "subtype": "bat",
+          "x": 200,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "cave_depths",
+      "name": "Cave Depths",
+      "tileset": "dungeon",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": "dark_cave",
+        "west": "underground_river"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_red",
+          "x": 320,
+          "y": 150
+        }
+      ]
+    },
+    {
+      "id": "underground_river",
+      "name": "Underground River",
+      "tileset": "dungeon",
+      "exits": {
+        "north": null,
+        "east": "cave_depths",
+        "south": null,
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 600,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "courtyard",
+      "name": "Courtyard",
+      "tileset": "grasslands",
+      "exits": {
+        "north": "castle_entrance",
+        "east": "garden",
+        "south": "dungeon_entrance",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 100
+        }
+      ]
+    },
+    {
+      "id": "garden",
+      "name": "Garden",
+      "tileset": "grasslands",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": null,
+        "west": "courtyard"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 600,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "dungeon_entrance",
+      "name": "Dungeon Entrance",
+      "tileset": "dungeon",
+      "exits": {
+        "north": "courtyard",
+        "east": null,
+        "south": "dungeon_corridor",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 100
+        },
+        {
+          "type": "enemy",
+          "subtype": "bat",
+          "x": 320,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "dungeon_corridor",
+      "name": "Dungeon Corridor",
+      "tileset": "dungeon",
+      "exits": {
+        "north": "dungeon_entrance",
+        "east": "torture_chamber",
+        "south": "dungeon_depths",
+        "west": "prison_cells"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 100
+        }
+      ]
+    },
+    {
+      "id": "prison_cells",
+      "name": "Prison Cells",
+      "tileset": "dungeon",
+      "exits": {
+        "north": null,
+        "east": "dungeon_corridor",
+        "south": null,
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 600,
+          "y": 240
+        },
+        {
+          "type": "enemy",
+          "subtype": "bat",
+          "x": 200,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "torture_chamber",
+      "name": "Torture Chamber",
+      "tileset": "dungeon",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": null,
+        "west": "dungeon_corridor"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 600,
+          "y": 240
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_yellow",
+          "x": 200,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "dungeon_depths",
+      "name": "Dungeon Depths",
+      "tileset": "dungeon",
+      "exits": {
+        "north": "dungeon_corridor",
+        "east": "labyrinth_start",
+        "south": "catacombs",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 100
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_red",
+          "x": 200,
+          "y": 300
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_yellow",
+          "x": 450,
+          "y": 300
+        }
+      ]
+    },
+    {
+      "id": "catacombs",
+      "name": "Catacombs",
+      "tileset": "dungeon",
+      "exits": {
+        "north": "dungeon_depths",
+        "east": null,
+        "south": "tomb",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 100
+        },
+        {
+          "type": "enemy",
+          "subtype": "bat",
+          "x": 320,
+          "y": 350
+        }
+      ]
+    },
+    {
+      "id": "tomb",
+      "name": "Ancient Tomb",
+      "tileset": "dungeon",
+      "exits": {
+        "north": "catacombs",
+        "east": null,
+        "south": null,
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        }
+      ]
+    },
+    {
+      "id": "labyrinth_start",
+      "name": "Labyrinth Entrance",
+      "tileset": "labyrinth",
+      "exits": {
+        "north": "labyrinth_north",
+        "east": "labyrinth_east",
+        "south": "labyrinth_south",
+        "west": "dungeon_depths"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 100,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "labyrinth_north",
+      "name": "Labyrinth North",
+      "tileset": "labyrinth",
+      "exits": {
+        "north": "labyrinth_northwest",
+        "east": "labyrinth_northeast",
+        "south": "labyrinth_start",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        },
+        {
+          "type": "enemy",
+          "subtype": "bat",
+          "x": 320,
+          "y": 150
+        }
+      ]
+    },
+    {
+      "id": "labyrinth_northwest",
+      "name": "Labyrinth Northwest",
+      "tileset": "labyrinth",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": "labyrinth_north",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        }
+      ]
+    },
+    {
+      "id": "labyrinth_northeast",
+      "name": "Labyrinth Northeast",
+      "tileset": "labyrinth",
+      "exits": {
+        "north": "labyrinth_vault",
+        "east": null,
+        "south": null,
+        "west": "labyrinth_north"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 100,
+          "y": 240
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_green",
+          "x": 400,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "labyrinth_vault",
+      "name": "Labyrinth Vault",
+      "tileset": "labyrinth",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": "labyrinth_northeast",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 400
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_red",
+          "x": 400,
+          "y": 200
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_red",
+          "x": 240,
+          "y": 200
+        },
+        {
+          "type": "item",
+          "subtype": "chalice",
+          "x": 320,
+          "y": 100
+        }
+      ]
+    },
+    {
+      "id": "labyrinth_east",
+      "name": "Labyrinth East",
+      "tileset": "labyrinth",
+      "exits": {
+        "north": null,
+        "east": "labyrinth_southeast",
+        "south": null,
+        "west": "labyrinth_start"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 100,
+          "y": 240
+        },
+        {
+          "type": "enemy",
+          "subtype": "bat",
+          "x": 400,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "labyrinth_southeast",
+      "name": "Labyrinth Southeast",
+      "tileset": "labyrinth",
+      "exits": {
+        "north": null,
+        "east": null,
+        "south": null,
+        "west": "labyrinth_east"
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 600,
+          "y": 240
+        }
+      ]
+    },
+    {
+      "id": "labyrinth_south",
+      "name": "Labyrinth South",
+      "tileset": "labyrinth",
+      "exits": {
+        "north": "labyrinth_start",
+        "east": null,
+        "south": "labyrinth_southwest",
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 100
+        }
+      ]
+    },
+    {
+      "id": "labyrinth_southwest",
+      "name": "Labyrinth Southwest",
+      "tileset": "labyrinth",
+      "exits": {
+        "north": "labyrinth_south",
+        "east": null,
+        "south": null,
+        "west": null
+      },
+      "entities": [
+        {
+          "type": "player_spawn",
+          "x": 320,
+          "y": 100
+        },
+        {
+          "type": "enemy",
+          "subtype": "dragon_yellow",
+          "x": 320,
+          "y": 300
+        }
+      ]
+    }
+  ]
+}

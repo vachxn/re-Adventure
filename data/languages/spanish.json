@@ -1,0 +1,44 @@
+{
+  "menu": {
+    "title": "re-Adventure",
+    "subtitle": "Una reinterpretación del clásico \"Adventure\"",
+    "start_game": "Iniciar Juego",
+    "exit": "Salir",
+    "controls": "Controles: WASD/Flechas para mover • Espacio/E para atacar • ESC para salir",
+    "objective": "¡Objetivo: Encuentra el Cáliz Encantado!"
+  },
+  "game": {
+    "room": "Sala",
+    "inventory": "Inventario",
+    "inventory_empty": "Vacío",
+    "welcome": "¡Bienvenido a re-Adventure!",
+    "game_over": "JUEGO TERMINADO",
+    "you_died": "¡Has muerto!",
+    "victory": "¡VICTORIA!",
+    "found_chalice": "¡Encontraste el Cáliz Encantado!",
+    "try_again": "Intentar de Nuevo",
+    "play_again": "Jugar de Nuevo",
+    "main_menu": "Menú Principal"
+  },
+  "messages": {
+    "found_sword": "¡Espada encontrada!",
+    "found_key": "¡Llave {key_type} encontrada!",
+    "found_chalice": "¡Cáliz Encantado encontrado!",
+    "found_item": "¡{item} encontrado!",
+    "defeated": "¡{enemy} derrotado!",
+    "hit": "¡{enemy} golpeado!",
+    "took_damage": "¡Ay! Has recibido daño!",
+    "hit_hazard": "¡Has tocado una trampa!",
+    "game_over": "¡Juego terminado! Has muerto.",
+    "victory": "¡Victoria! ¡Encontraste el Cáliz Encantado!",
+    "entered_room": "Entraste a {room}",
+    "game_loaded": "¡Juego cargado!"
+  },
+  "enemies": {
+    "dragon_red": "Dragón Rojo",
+    "dragon_yellow": "Dragón Amarillo",
+    "dragon_green": "Dragón Verde",
+    "bat": "Murciélago"
+  }
+}
+

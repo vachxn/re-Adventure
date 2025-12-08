@@ -1,0 +1,44 @@
+{
+  "menu": {
+    "title": "re-Adventure",
+    "subtitle": "Une réinterprétation du classique \"Adventure\"",
+    "start_game": "Commencer",
+    "exit": "Quitter",
+    "controls": "Contrôles: WASD/Flèches pour bouger • Espace/E pour attaquer • ESC pour quitter",
+    "objective": "Objectif: Trouvez le Calice Enchanté!"
+  },
+  "game": {
+    "room": "Salle",
+    "inventory": "Inventaire",
+    "inventory_empty": "Vide",
+    "welcome": "Bienvenue dans re-Adventure!",
+    "game_over": "GAME OVER",
+    "you_died": "Vous êtes mort!",
+    "victory": "VICTOIRE!",
+    "found_chalice": "Vous avez trouvé le Calice Enchanté!",
+    "try_again": "Réessayer",
+    "play_again": "Rejouer",
+    "main_menu": "Menu Principal"
+  },
+  "messages": {
+    "found_sword": "Épée trouvée!",
+    "found_key": "Clé {key_type} trouvée!",
+    "found_chalice": "Calice Enchanté trouvé!",
+    "found_item": "{item} trouvé!",
+    "defeated": "{enemy} vaincu!",
+    "hit": "{enemy} touché!",
+    "took_damage": "Aïe! Vous avez pris des dégâts!",
+    "hit_hazard": "Vous avez touché un piège!",
+    "game_over": "Partie terminée! Vous êtes mort.",
+    "victory": "Victoire! Vous avez trouvé le Calice Enchanté!",
+    "entered_room": "Entré dans {room}",
+    "game_loaded": "Partie chargée!"
+  },
+  "enemies": {
+    "dragon_red": "Dragon Rouge",
+    "dragon_yellow": "Dragon Jaune",
+    "dragon_green": "Dragon Vert",
+    "bat": "Chauve-souris"
+  }
+}
+

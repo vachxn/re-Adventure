@@ -1,0 +1,44 @@
+{
+  "menu": {
+    "title": "re-Adventure",
+    "subtitle": "经典游戏\"Adventure\"的重新构想",
+    "start_game": "开始游戏",
+    "exit": "退出",
+    "controls": "控制: WASD/方向键移动 • 空格/E攻击 • ESC退出",
+    "objective": "目标: 找到魔法圣杯！"
+  },
+  "game": {
+    "room": "房间",
+    "inventory": "物品栏",
+    "inventory_empty": "空",
+    "welcome": "欢迎来到 re-Adventure！",
+    "game_over": "游戏结束",
+    "you_died": "你死了！",
+    "victory": "胜利！",
+    "found_chalice": "你找到了魔法圣杯！",
+    "try_again": "重试",
+    "play_again": "再玩一次",
+    "main_menu": "主菜单"
+  },
+  "messages": {
+    "found_sword": "找到了剑！",
+    "found_key": "找到了{key_type}钥匙！",
+    "found_chalice": "找到了魔法圣杯！",
+    "found_item": "找到了{item}！",
+    "defeated": "击败了{enemy}！",
+    "hit": "击中了{enemy}！",
+    "took_damage": "哎呀！受到了伤害！",
+    "hit_hazard": "触发了陷阱！",
+    "game_over": "游戏结束！你死了。",
+    "victory": "胜利！你找到了魔法圣杯！",
+    "entered_room": "进入了{room}",
+    "game_loaded": "游戏已加载！"
+  },
+  "enemies": {
+    "dragon_red": "红龙",
+    "dragon_yellow": "黄龙",
+    "dragon_green": "绿龙",
+    "bat": "蝙蝠"
+  }
+}
+

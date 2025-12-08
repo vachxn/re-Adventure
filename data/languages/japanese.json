@@ -1,0 +1,44 @@
+{
+  "menu": {
+    "title": "re-Adventure",
+    "subtitle": "クラシック「Adventure」の再構築",
+    "start_game": "ゲーム開始",
+    "exit": "終了",
+    "controls": "操作: WASD/矢印キーで移動 • スペース/Eで攻撃 • ESCで終了",
+    "objective": "目標: 魔法の聖杯を見つけよう！"
+  },
+  "game": {
+    "room": "部屋",
+    "inventory": "インベントリ",
+    "inventory_empty": "空",
+    "welcome": "re-Adventureへようこそ！",
+    "game_over": "ゲームオーバー",
+    "you_died": "死亡しました！",
+    "victory": "勝利！",
+    "found_chalice": "魔法の聖杯を見つけました！",
+    "try_again": "再試行",
+    "play_again": "もう一度プレイ",
+    "main_menu": "メインメニュー"
+  },
+  "messages": {
+    "found_sword": "剣を見つけました！",
+    "found_key": "{key_type}の鍵を見つけました！",
+    "found_chalice": "魔法の聖杯を見つけました！",
+    "found_item": "{item}を見つけました！",
+    "defeated": "{enemy}を倒しました！",
+    "hit": "{enemy}に命中！",
+    "took_damage": "痛い！ダメージを受けました！",
+    "hit_hazard": "罠に触れました！",
+    "game_over": "ゲームオーバー！死亡しました。",
+    "victory": "勝利！魔法の聖杯を見つけました！",
+    "entered_room": "{room}に入りました",
+    "game_loaded": "ゲームを読み込みました！"
+  },
+  "enemies": {
+    "dragon_red": "赤いドラゴン",
+    "dragon_yellow": "黄色いドラゴン",
+    "dragon_green": "緑のドラゴン",
+    "bat": "コウモリ"
+  }
+}
+

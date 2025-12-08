@@ -1,0 +1,44 @@
+{
+  "menu": {
+    "title": "re-Adventure",
+    "subtitle": "A re-imagining of the classic \"Adventure\" game",
+    "start_game": "Start Game",
+    "exit": "Exit",
+    "controls": "Controls: WASD/Arrows to move • Space/E to attack • ESC to quit",
+    "objective": "Objective: Find the Enchanted Chalice!"
+  },
+  "game": {
+    "room": "Room",
+    "inventory": "Inventory",
+    "inventory_empty": "Empty",
+    "welcome": "Welcome to re-Adventure!",
+    "game_over": "GAME OVER",
+    "you_died": "You died!",
+    "victory": "VICTORY!",
+    "found_chalice": "You found the Enchanted Chalice!",
+    "try_again": "Try Again",
+    "play_again": "Play Again",
+    "main_menu": "Main Menu"
+  },
+  "messages": {
+    "found_sword": "Found the Sword!",
+    "found_key": "Found {key_type} Key!",
+    "found_chalice": "Found the Enchanted Chalice!",
+    "found_item": "Found {item}!",
+    "defeated": "Defeated {enemy}!",
+    "hit": "Hit {enemy}!",
+    "took_damage": "Ouch! Took damage!",
+    "hit_hazard": "Hit a hazard!",
+    "game_over": "Game Over! You died.",
+    "victory": "Victory! You found the Enchanted Chalice!",
+    "entered_room": "Entered {room}",
+    "game_loaded": "Game loaded!"
+  },
+  "enemies": {
+    "dragon_red": "Red Dragon",
+    "dragon_yellow": "Yellow Dragon",
+    "dragon_green": "Green Dragon",
+    "bat": "Bat"
+  }
+}
+

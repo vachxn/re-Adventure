@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "id": "sword",
+      "name": "Sword",
+      "description": "A mighty sword for slaying dragons",
+      "type": "weapon"
+    },
+    {
+      "id": "key_gold",
+      "name": "Gold Key",
+      "description": "A shining golden key",
+      "type": "key"
+    },
+    {
+      "id": "key_silver",
+      "name": "Silver Key",
+      "description": "A silver key",
+      "type": "key"
+    },
+    {
+      "id": "chalice",
+      "name": "Enchanted Chalice",
+      "description": "The legendary Enchanted Chalice! You win!",
+      "type": "quest"
+    }
+  ]
+}
+

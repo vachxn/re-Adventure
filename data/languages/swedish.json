@@ -1,0 +1,44 @@
+{
+  "menu": {
+    "title": "re-Adventure",
+    "subtitle": "En omtolkning av klassikern \"Adventure\"",
+    "start_game": "Starta Spel",
+    "exit": "Avsluta",
+    "controls": "Kontroller: WASD/Pilar för att röra sig • Mellanslag/E för att attackera • ESC för att avsluta",
+    "objective": "Mål: Hitta den Förtrollade Pokalen!"
+  },
+  "game": {
+    "room": "Rum",
+    "inventory": "Inventarie",
+    "inventory_empty": "Tom",
+    "welcome": "Välkommen till re-Adventure!",
+    "game_over": "SPELET SLUT",
+    "you_died": "Du dog!",
+    "victory": "SEGER!",
+    "found_chalice": "Du hittade den Förtrollade Pokalen!",
+    "try_again": "Försök Igen",
+    "play_again": "Spela Igen",
+    "main_menu": "Huvudmeny"
+  },
+  "messages": {
+    "found_sword": "Hittade svärdet!",
+    "found_key": "Hittade {key_type} nyckel!",
+    "found_chalice": "Hittade den Förtrollade Pokalen!",
+    "found_item": "Hittade {item}!",
+    "defeated": "Besegrade {enemy}!",
+    "hit": "Träffade {enemy}!",
+    "took_damage": "Aj! Tog skada!",
+    "hit_hazard": "Träffade en fälla!",
+    "game_over": "Spelet slut! Du dog.",
+    "victory": "Seger! Du hittade den Förtrollade Pokalen!",
+    "entered_room": "Gick in i {room}",
+    "game_loaded": "Spel laddat!"
+  },
+  "enemies": {
+    "dragon_red": "Röd Drake",
+    "dragon_yellow": "Gul Drake",
+    "dragon_green": "Grön Drake",
+    "bat": "Fladdermus"
+  }
+}
+

@@ -1,0 +1,37 @@
+{
+  "enemies": [
+    {
+      "id": "dragon_red",
+      "name": "Red Dragon",
+      "health": 3,
+      "damage": 1,
+      "speed": 1.5,
+      "ai_type": "chase"
+    },
+    {
+      "id": "dragon_yellow",
+      "name": "Yellow Dragon",
+      "health": 2,
+      "damage": 1,
+      "speed": 2.0,
+      "ai_type": "chase"
+    },
+    {
+      "id": "dragon_green",
+      "name": "Green Dragon",
+      "health": 4,
+      "damage": 1,
+      "speed": 1.0,
+      "ai_type": "patrol"
+    },
+    {
+      "id": "bat",
+      "name": "Bat",
+      "health": 1,
+      "damage": 1,
+      "speed": 2.5,
+      "ai_type": "chase"
+    }
+  ]
+}
+

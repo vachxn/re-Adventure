@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "welcome": "Welcome to re-Adventure! Find the Enchanted Chalice!",
+    "game_over": "Game Over! Press ESC to quit.",
+    "victory": "Victory! You found the Enchanted Chalice!",
+    "need_sword": "You need the sword to fight dragons!",
+    "need_key": "This door is locked. You need a key.",
+    "low_health": "Your health is low! Be careful!"
+  }
+}
+
