@@ -15,6 +15,21 @@ A re-imagining of the classic "Adventure" game, built with Python 3 and PyQt6.
 - Room transitions
 - Save/Load functionality
 - 1280x720 desktop window
+- **Multi-language support** - Choose from 7 languages in the main menu
+
+## Supported Languages
+
+The game supports the following languages (selectable from the main menu):
+
+- 🇬🇧 **English** (default)
+- 🇫🇷 **French** (Français)
+- 🇩🇪 **German** (Deutsch)
+- 🇪🇸 **Spanish** (Español)
+- 🇸🇪 **Swedish** (Svenska)
+- 🇯🇵 **Japanese** (日本語)
+- 🇨🇳 **Chinese** (中文)
+
+Your language preference is automatically saved and will be remembered for future game sessions.
 
 ## Installation
 
