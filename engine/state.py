@@ -28,6 +28,9 @@ class GameState:
         self.game_won = False
         self.last_message = ""
         
+        # Track unlocked doors: set of (room_id, direction) tuples
+        self.unlocked_doors = set()
+        
         # Timing
         self.damage_cooldown = 0  # Prevent damage spam
         self.attack_cooldown = 0  # Prevent attack spam
@@ -221,6 +224,34 @@ class GameState:
         next_room_id = self.current_room.get_exit(direction)
         if not next_room_id:
             return
+        
+        # Check if door is locked
+        door_key = (self.current_room.room_id, direction)
+        is_locked = self.current_room.is_exit_locked(direction)
+        is_unlocked = door_key in self.unlocked_doors
+        
+        if is_locked and not is_unlocked:
+            # Check if player has the required key
+            required_key = self.current_room.get_exit_key(direction)
+            if required_key and self.player.has_key(required_key):
+                # Unlock the door and consume the key
+                self.unlocked_doors.add(door_key)
+                self.player.keys.remove(required_key)
+                unlock_text = self.language_manager.get("messages.door_unlocked", "Unlocked the door with the {key} key!")
+                key_display = required_key.capitalize()
+                self.last_message = unlock_text.replace("{key}", key_display)
+                # Continue to transition
+            else:
+                # Door is locked and player doesn't have the key
+                required_key = self.current_room.get_exit_key(direction)
+                if required_key:
+                    key_display = required_key.capitalize()
+                    locked_text = self.language_manager.get("messages.door_locked", "The door is locked! Requires {key} Key.")
+                    self.last_message = locked_text.replace("{key}", key_display)
+                else:
+                    locked_text = self.language_manager.get("messages.door_locked", "The door is locked!")
+                    self.last_message = locked_text
+                return
             
         next_room = self.world.get_room(next_room_id)
         if not next_room:
@@ -252,6 +283,7 @@ class GameState:
                 "keys": self.player.keys,
                 "quest_items": self.player.quest_items
             },
+            "unlocked_doors": list(self.unlocked_doors),  # Save unlocked doors
             "dead_enemies": [],  # Track which enemies are dead
             "collected_items": []  # Track which items are collected
         }
@@ -276,6 +308,10 @@ class GameState:
             # Restore room
             room_id = save_data["current_room"]
             self.current_room = self.world.get_room(room_id)
+            
+            # Restore unlocked doors
+            if "unlocked_doors" in save_data:
+                self.unlocked_doors = set(tuple(door) for door in save_data["unlocked_doors"])
             
             self.last_message = self.language_manager.get("messages.game_loaded", "Game loaded!")
             

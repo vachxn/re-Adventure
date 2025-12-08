@@ -32,7 +32,9 @@
     "game_over": "¡Juego terminado! Has muerto.",
     "victory": "¡Victoria! ¡Encontraste el Cáliz Encantado!",
     "entered_room": "Entraste a {room}",
-    "game_loaded": "¡Juego cargado!"
+    "game_loaded": "¡Juego cargado!",
+    "door_locked": "¡La puerta está cerrada! Requiere llave {key}.",
+    "door_unlocked": "¡Puerta desbloqueada con la llave {key}!"
   },
   "enemies": {
     "dragon_red": "Dragón Rojo",

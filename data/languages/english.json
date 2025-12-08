@@ -32,7 +32,9 @@
     "game_over": "Game Over! You died.",
     "victory": "Victory! You found the Enchanted Chalice!",
     "entered_room": "Entered {room}",
-    "game_loaded": "Game loaded!"
+    "game_loaded": "Game loaded!",
+    "door_locked": "The door is locked! Requires {key} Key.",
+    "door_unlocked": "Unlocked the door with the {key} key!"
   },
   "enemies": {
     "dragon_red": "Red Dragon",

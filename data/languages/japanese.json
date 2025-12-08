@@ -32,7 +32,9 @@
     "game_over": "ゲームオーバー！死亡しました。",
     "victory": "勝利！魔法の聖杯を見つけました！",
     "entered_room": "{room}に入りました",
-    "game_loaded": "ゲームを読み込みました！"
+    "game_loaded": "ゲームを読み込みました！",
+    "door_locked": "ドアがロックされています！{key}の鍵が必要です。",
+    "door_unlocked": "{key}の鍵でドアを開けました！"
   },
   "enemies": {
     "dragon_red": "赤いドラゴン",

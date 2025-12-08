@@ -12,7 +12,15 @@ class Room:
         self.room_id = room_id
         self.name = name
         self.tileset = tileset
+        # Exits can be either a string (room_id) or a dict with room, locked, and key
         self.exits = {
+            "north": None,
+            "south": None,
+            "east": None,
+            "west": None
+        }
+        # Exit metadata: {direction: {"locked": bool, "key": str}}
+        self.exit_metadata = {
             "north": None,
             "south": None,
             "east": None,
@@ -30,14 +38,37 @@ class Room:
         if entity in self.entities:
             self.entities.remove(entity)
             
-    def set_exit(self, direction: str, room_id: str):
-        """Set an exit to another room"""
+    def set_exit(self, direction: str, room_id: str, locked: bool = False, key_type: Optional[str] = None):
+        """Set an exit to another room, optionally locked"""
         if direction in self.exits:
             self.exits[direction] = room_id
-            
+            if locked and key_type:
+                self.exit_metadata[direction] = {"locked": True, "key": key_type}
+            else:
+                self.exit_metadata[direction] = None
+                
     def get_exit(self, direction: str) -> Optional[str]:
         """Get the room ID for an exit direction"""
         return self.exits.get(direction)
+        
+    def is_exit_locked(self, direction: str) -> bool:
+        """Check if an exit is locked"""
+        metadata = self.exit_metadata.get(direction)
+        if metadata:
+            return metadata.get("locked", False)
+        return False
+        
+    def get_exit_key(self, direction: str) -> Optional[str]:
+        """Get the key type required for a locked exit"""
+        metadata = self.exit_metadata.get(direction)
+        if metadata:
+            return metadata.get("key")
+        return None
+        
+    def unlock_exit(self, direction: str):
+        """Unlock an exit"""
+        if direction in self.exit_metadata:
+            self.exit_metadata[direction] = None
         
     def cleanup_dead_entities(self):
         """Remove dead entities from the room"""
@@ -75,10 +106,19 @@ class World:
                 tileset=room_data.get("tileset", "grasslands")
             )
             
-            # Set exits
-            for direction, target in room_data.get("exits", {}).items():
-                if target:
-                    room.set_exit(direction, target)
+            # Set exits (support both simple string format and locked door format)
+            for direction, exit_data in room_data.get("exits", {}).items():
+                if exit_data:
+                    if isinstance(exit_data, dict):
+                        # New format: {"room": "room_id", "locked": true, "key": "gold"}
+                        room_id = exit_data.get("room")
+                        locked = exit_data.get("locked", False)
+                        key_type = exit_data.get("key")
+                        if room_id:
+                            room.set_exit(direction, room_id, locked, key_type)
+                    else:
+                        # Old format: just a string room_id
+                        room.set_exit(direction, exit_data)
             
             # Create entities
             for entity_data in room_data.get("entities", []):

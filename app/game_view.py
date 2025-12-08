@@ -83,41 +83,70 @@ class GameView(QGraphicsView):
         
     def draw_exits(self, room):
         """Draw exit indicators"""
+        # Get unlocked doors from game state
+        unlocked_doors = getattr(self.game_state, 'unlocked_doors', set())
+        
+        # Default exit colors (unlocked or no lock)
         exit_pen = QPen(QColor(200, 200, 100), 2)
         exit_brush = QBrush(QColor(150, 150, 80))
         
+        # Locked exit colors (red/orange to indicate locked)
+        locked_pen = QPen(QColor(200, 100, 50), 3)
+        locked_brush = QBrush(QColor(150, 50, 0))
+        
+        # Helper function to check if exit is locked
+        def is_door_unlocked(direction):
+            door_key = (room.room_id, direction)
+            if door_key in unlocked_doors:
+                return True
+            if room.is_exit_locked(direction):
+                return False
+            return True  # Not locked, so unlocked
+        
         # North exit
         if room.exits.get("north"):
+            is_unlocked = is_door_unlocked("north")
+            pen = exit_pen if is_unlocked else locked_pen
+            brush = exit_brush if is_unlocked else locked_brush
             exit_rect = QGraphicsRectItem(self.LOGICAL_WIDTH // 2 - 30, 5, 60, 15)
-            exit_rect.setPen(exit_pen)
-            exit_rect.setBrush(exit_brush)
+            exit_rect.setPen(pen)
+            exit_rect.setBrush(brush)
             exit_rect.setZValue(-1)  # Exits behind entities
             self.scene.addItem(exit_rect)
             self.room_items.append(exit_rect)
             
         # South exit
         if room.exits.get("south"):
+            is_unlocked = is_door_unlocked("south")
+            pen = exit_pen if is_unlocked else locked_pen
+            brush = exit_brush if is_unlocked else locked_brush
             exit_rect = QGraphicsRectItem(self.LOGICAL_WIDTH // 2 - 30, self.LOGICAL_HEIGHT - 20, 60, 15)
-            exit_rect.setPen(exit_pen)
-            exit_rect.setBrush(exit_brush)
+            exit_rect.setPen(pen)
+            exit_rect.setBrush(brush)
             exit_rect.setZValue(-1)  # Exits behind entities
             self.scene.addItem(exit_rect)
             self.room_items.append(exit_rect)
             
         # East exit
         if room.exits.get("east"):
+            is_unlocked = is_door_unlocked("east")
+            pen = exit_pen if is_unlocked else locked_pen
+            brush = exit_brush if is_unlocked else locked_brush
             exit_rect = QGraphicsRectItem(self.LOGICAL_WIDTH - 20, self.LOGICAL_HEIGHT // 2 - 30, 15, 60)
-            exit_rect.setPen(exit_pen)
-            exit_rect.setBrush(exit_brush)
+            exit_rect.setPen(pen)
+            exit_rect.setBrush(brush)
             exit_rect.setZValue(-1)  # Exits behind entities
             self.scene.addItem(exit_rect)
             self.room_items.append(exit_rect)
             
         # West exit
         if room.exits.get("west"):
+            is_unlocked = is_door_unlocked("west")
+            pen = exit_pen if is_unlocked else locked_pen
+            brush = exit_brush if is_unlocked else locked_brush
             exit_rect = QGraphicsRectItem(5, self.LOGICAL_HEIGHT // 2 - 30, 15, 60)
-            exit_rect.setPen(exit_pen)
-            exit_rect.setBrush(exit_brush)
+            exit_rect.setPen(pen)
+            exit_rect.setBrush(brush)
             exit_rect.setZValue(-1)  # Exits behind entities
             self.scene.addItem(exit_rect)
             self.room_items.append(exit_rect)

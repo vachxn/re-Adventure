@@ -138,7 +138,11 @@
       "name": "Great Hall",
       "tileset": "castle",
       "exits": {
-        "north": "throne_room",
+        "north": {
+          "room": "throne_room",
+          "locked": true,
+          "key": "gold"
+        },
         "east": "dining_hall",
         "south": "castle_entrance",
         "west": "library"
@@ -148,12 +152,6 @@
           "type": "player_spawn",
           "x": 320,
           "y": 400
-        },
-        {
-          "type": "item",
-          "subtype": "key_gold",
-          "x": 320,
-          "y": 100
         }
       ]
     },
@@ -256,6 +254,12 @@
           "type": "player_spawn",
           "x": 320,
           "y": 400
+        },
+        {
+          "type": "item",
+          "subtype": "key_gold",
+          "x": 320,
+          "y": 100
         }
       ]
     },
@@ -816,7 +820,11 @@
       "name": "Labyrinth Northeast",
       "tileset": "labyrinth",
       "exits": {
-        "north": "labyrinth_vault",
+        "north": {
+          "room": "labyrinth_vault",
+          "locked": true,
+          "key": "silver"
+        },
         "east": null,
         "south": null,
         "west": "labyrinth_north"

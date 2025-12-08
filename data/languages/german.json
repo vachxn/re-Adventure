@@ -32,7 +32,9 @@
     "game_over": "Spiel vorbei! Du bist gestorben.",
     "victory": "Sieg! Du hast den Verzauberten Kelch gefunden!",
     "entered_room": "Betreten: {room}",
-    "game_loaded": "Spiel geladen!"
+    "game_loaded": "Spiel geladen!",
+    "door_locked": "Die Tür ist verschlossen! Benötigt {key} Schlüssel.",
+    "door_unlocked": "Tür mit dem {key} Schlüssel geöffnet!"
   },
   "enemies": {
     "dragon_red": "Roter Drache",

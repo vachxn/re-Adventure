@@ -32,7 +32,9 @@
     "game_over": "游戏结束！你死了。",
     "victory": "胜利！你找到了魔法圣杯！",
     "entered_room": "进入了{room}",
-    "game_loaded": "游戏已加载！"
+    "game_loaded": "游戏已加载！",
+    "door_locked": "门已上锁！需要{key}钥匙。",
+    "door_unlocked": "用{key}钥匙打开了门！"
   },
   "enemies": {
     "dragon_red": "红龙",

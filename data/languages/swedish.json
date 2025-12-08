@@ -32,7 +32,9 @@
     "game_over": "Spelet slut! Du dog.",
     "victory": "Seger! Du hittade den Förtrollade Pokalen!",
     "entered_room": "Gick in i {room}",
-    "game_loaded": "Spel laddat!"
+    "game_loaded": "Spel laddat!",
+    "door_locked": "Dörren är låst! Kräver {key} nyckel.",
+    "door_unlocked": "Dörren öppnades med {key} nyckeln!"
   },
   "enemies": {
     "dragon_red": "Röd Drake",

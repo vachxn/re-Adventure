@@ -32,7 +32,9 @@
     "game_over": "Partie terminée! Vous êtes mort.",
     "victory": "Victoire! Vous avez trouvé le Calice Enchanté!",
     "entered_room": "Entré dans {room}",
-    "game_loaded": "Partie chargée!"
+    "game_loaded": "Partie chargée!",
+    "door_locked": "La porte est verrouillée! Nécessite la clé {key}.",
+    "door_unlocked": "Porte déverrouillée avec la clé {key}!"
   },
   "enemies": {
     "dragon_red": "Dragon Rouge",
