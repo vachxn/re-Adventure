@@ -113,8 +113,11 @@ re-Adventure/
 
 ## Audio
 
-game audios are from pixabay.com
+Game audio files are from pixabay.com
 
+## Sprites
+
+The game sprites are **free to use** in your own projects with attribution. If you use these sprites, please credit this repository (https://github.com/non-npc/re-Adventure).
 
 ## License
 
