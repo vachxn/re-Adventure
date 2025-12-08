@@ -58,7 +58,7 @@ python main.py
 Explore the castle, forest, dungeon, and labyrinth to find the **Enchanted Chalice**!
 
 - Find the **Sword** to defeat dragons
-- Collect **Keys** to unlock doors (future feature)
+- Collect **Keys** to unlock doors
 - Avoid or defeat **Dragons** and other enemies
 - Manage your **Health** (3 hearts)
 
